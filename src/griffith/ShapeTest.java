@@ -8,9 +8,11 @@ import org.junit.jupiter.api.Test;
 
 class ShapeTest {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+	 @Test
+	    public void testCircle() {
+		 Circle circle = new Circle("Circle", 5.0);
+	        
+	        assertEquals(100.0, circle.area(), 0.0001);
+	 }
 
 }
