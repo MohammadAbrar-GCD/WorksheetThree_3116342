@@ -16,12 +16,17 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // Abstract method to calculate the area of the shape
     public abstract double area();
+
+    // Abstract method to calculate the perimeter of the shape
     public abstract double perimeter();
 
+    // Overridden toString method to print the name of the shape
     @Override
     public String toString() {
         return "Shape: " + name;
+        
     }
 
 }
