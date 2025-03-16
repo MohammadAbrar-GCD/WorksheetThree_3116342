@@ -12,7 +12,7 @@ class ShapeTest {
 	    public void testCircle() {
 		 Circle circle = new Circle("Circle", 5.0);
 	        
-	        assertEquals(100.0, circle.area(), 0.0001);
+		 assertEquals(78.53981633974483, circle.area(), 0.0001);
 	 }
 
 }
