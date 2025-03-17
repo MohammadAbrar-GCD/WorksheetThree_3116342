@@ -42,7 +42,7 @@ class ShapeTest {
 		    
 		    assertEquals(12.0, triangle.perimeter(), 0.0001);
 		    
-		    assertEquals("Shape: Triangle, Base: 5.0, Height: 4.0", triangle.toString()); 
+		    assertEquals("Shape: Triangle, Base: 3.0, Height: 4.0", triangle.toString()); 
 		    
 		    
 		    
