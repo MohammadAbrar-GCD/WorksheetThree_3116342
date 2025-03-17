@@ -20,6 +20,13 @@ class ShapeTest {
 		 assertEquals("Shape: Circle, Radius: 5.0", circle.toString()); 
 	 }
 	 
-	 
+	 public void testRhombus() {
+		    
+		    Rhombus rhombus = new Rhombus("Rhombus", 6.0, 8.0);
+		    
+		    assertEquals(30.0, rhombus.area(), 0.0001);
+		    
+		    
+	 }
 
 }
