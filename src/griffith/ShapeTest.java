@@ -25,9 +25,11 @@ class ShapeTest {
 		    
 		    Rhombus rhombus = new Rhombus("Rhombus", 6.0, 8.0);
 		    
-		    //assertEquals(24.0, rhombus.area(), 0.0001); 
+		    assertEquals(24.0, rhombus.area(), 0.0001); 
 		    
 		    assertEquals(20.0, rhombus.perimeter(), 0.0001);
+		    
+		    assertEquals("Shape: Rhombus, Diagonal 1: 6.0, Diagonal 2: 8.0", rhombus.toString());
 		    
 	 }
 
