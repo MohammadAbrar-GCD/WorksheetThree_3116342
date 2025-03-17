@@ -27,7 +27,7 @@ class ShapeTest {
 		    
 		    //assertEquals(24.0, rhombus.area(), 0.0001); 
 		    
-		    assertEquals(9.0, rhombus.perimeter(), 0.0001);
+		    assertEquals(20.0, rhombus.perimeter(), 0.0001);
 		    
 	 }
 
