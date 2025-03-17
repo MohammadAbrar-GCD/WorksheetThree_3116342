@@ -52,6 +52,7 @@ class ShapeTest {
 	 @Test
 	    public void testShapeIntegration() {
 		 
+		 //Create an 2 instances of each sub class
 		 List<Shape> shapes = new ArrayList<>();
 		 
 		 shapes.add(new Circle("Circle1", 3.0));
@@ -62,6 +63,30 @@ class ShapeTest {
 		 
 		 shapes.add(new RightAngledTriangle("Triangle1", 3.0, 4.0));
 		 shapes.add(new RightAngledTriangle("Triangle2", 6.0, 8.0));
+		 
+		 //Loop checks area and perimeter
+		 
+		 for (Shape shape : shapes) {
+	            if (shape instanceof Circle) {
+	                Circle circle = (Circle) shape;
+	                double expectedArea = Math.PI * Math.pow(circle.getRadius(), 2);
+	                double expectedPerimeter = 2 * Math.PI * circle.getRadius();
+	                assertEquals(expectedArea, shape.area(), 0.0001, "Incorrect area for Circle");
+	                assertEquals(expectedPerimeter, shape.perimeter(), 0.0001, "Incorrect perimeter for Circle");
+	            } else if (shape instanceof Rhombus) {
+	                Rhombus rhombus = (Rhombus) shape;
+	                double expectedArea = 0.5 * rhombus.getDiagonal1() * rhombus.getDiagonal2();
+	                assertEquals(expectedArea, shape.area(), 0.0001, "Incorrect area for Rhombus");
+	            } else if (shape instanceof RightAngledTriangle) {
+	                RightAngledTriangle triangle = (RightAngledTriangle) shape;
+	                double expectedArea = 0.5 * triangle.getBase() * triangle.getHeight();
+	                double expectedPerimeter = triangle.getBase() + triangle.getHeight() + 
+	                                           Math.sqrt(Math.pow(triangle.getBase(), 2) + Math.pow(triangle.getHeight(), 2));
+	                assertEquals(expectedArea, shape.area(), 0.0001, "Incorrect area for Triangle");
+	                assertEquals(expectedPerimeter, shape.perimeter(), 0.0001, "Incorrect perimeter for Triangle");
+	            }
+	        }
+		 
 		 
 		 
 		 
