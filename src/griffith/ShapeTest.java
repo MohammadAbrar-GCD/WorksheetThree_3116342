@@ -39,7 +39,7 @@ class ShapeTest {
 		    RightAngledTriangle triangle = new RightAngledTriangle("Triangle", 3.0, 4.0);
 		    
 		    assertEquals(6.0, triangle.area(), 0.0001);
-		    assertEquals(14.0, triangle.perimeter(), 0.0001);
+		    assertEquals(12.0, triangle.perimeter(), 0.0001);
 		    
 		    
 	 }
