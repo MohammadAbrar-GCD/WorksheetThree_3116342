@@ -52,7 +52,16 @@ class ShapeTest {
 	 @Test
 	    public void testShapeIntegration() {
 		 
+		 List<Shape> shapes = new ArrayList<>();
 		 
+		 shapes.add(new Circle("Circle1", 3.0));
+		 shapes.add(new Circle("Circle2", 5.0));
+		 
+		 shapes.add(new Rhombus("Rhombus1", 6.0, 8.0)); 
+		 shapes.add(new Rhombus("Rhombus2", 10.0, 12.0));
+		 
+		 shapes.add(new RightAngledTriangle("Triangle1", 3.0, 4.0));
+		 shapes.add(new RightAngledTriangle("Triangle2", 6.0, 8.0));
 		 
 		 
 		 
