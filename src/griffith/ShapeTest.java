@@ -2,6 +2,8 @@ package griffith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
@@ -44,9 +46,17 @@ class ShapeTest {
 		    
 		    assertEquals("Shape: Triangle, Base: 3.0, Height: 4.0", triangle.toString()); 
 		    
-		    
-		    
-		    
+		   
+	 }
+	 
+	 @Test
+	    public void testShapeIntegration() {
+		 
+		 
+		 
+		 
+		 
+		 
 	 }
 	   
 }
